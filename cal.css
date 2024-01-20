@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 26%, rgba(148,187,233,1) 100%);
+}
+
+.calculator{
+    border: transparent;
+    padding: 30px;
+    border-radius: 60px;
+    box-shadow: 1px 3px 150px grey;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 60%, rgba(104,31,199,1) 100%, rgba(0,212,255,1) 25%);
+}
+input{
+    border: none;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    background: transparent; 
+    text-align: right;  
+    color: white; 
+    font-size: 40px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: white;
+}
+button{
+    
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    border-radius: 40%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px; 
+    box-shadow: -1px -1px 15px rgba(177, 138, 228, 0.6) ;
+    cursor: pointer;  
+}
+
+.equalBtn{
+    color: white;
+    background-color: orange;
+}
+
+.operator{
+    color: greenyellow;
+}
+.operator.DEL{
+    color: red;
+}
